@@ -6,15 +6,16 @@ public class PublicClass {
 	public int publicField;
 	
 	public void publicMethod() {
-		System.out.println("publicMethod\n");
+		System.out.println("publicMethod");
+		System.out.println("publicField : "+publicField);
 	}
 	
 	private void privateMethod() {
-		System.out.println("privateMethod\n");
+		System.out.println("privateMethod");
 	}
 	
 	 void defalutMethod() {
-		System.out.println("defalutMethod\n");
+		System.out.println("defalutMethod");
 	}
 	 
 	 public void innerMethod() {

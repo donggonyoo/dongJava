@@ -24,5 +24,8 @@ public class MusicPlayer {
 		System.out.println("볼륨을 감소시킵니다 ");
 		System.out.println("현재볼륨 : "+volume+"\n");
 	}
+	public static void display() {
+		System.out.println("으으음");
+	}
 }
 

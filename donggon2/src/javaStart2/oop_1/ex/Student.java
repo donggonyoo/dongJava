@@ -3,8 +3,7 @@ package javaStart2.oop_1.ex;
 public class Student {
 
 	public static void main(String[] args) {
-		Calculator cal = new Calculator();
-		cal.set(10);
+		Calculator cal = new Calculator(10);
 		cal.add(5);
 		cal.minus(3);
 		cal.mulitply(3);

@@ -4,9 +4,11 @@ public class AirCond {
 	private int temperature;
 
 	public AirCond(int temperature) {
-		if(23 < temperature) {
-		this.temperature = temperature;}
-		else {return;}
+		if(22 < temperature) {
+		this.temperature = temperature;
+		}
+		else {
+			return;}
 		}
 
 	
@@ -16,8 +18,8 @@ public class AirCond {
 	}
 	
 	void tempDown() {
-		if(23>= temperature) {
-			System.out.println("온도를 내릴 수 없어");
+		if(22>=temperature) {
+			System.out.println("온도를 내릴 수 없어(최저온도22)");
 		}
 		else {
 			temperature--;

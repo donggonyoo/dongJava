@@ -10,6 +10,14 @@ public class ShopingCartMain {
 		cart.addItem(item1);
 		cart.addItem(item2);
 		cart.displayItems();
+		System.out.println();
+		
+		//List를 사용해 새롭게 구현
+		ShoppingCartGeneric cart2 = new ShoppingCartGeneric();
+		cart2.addItem(item1);
+		cart2.addItem(item2);
+		cart2.displayItem();
+		
 	}
 }
 
