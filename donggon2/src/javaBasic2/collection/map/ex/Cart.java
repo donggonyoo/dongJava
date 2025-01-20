@@ -14,31 +14,20 @@ public class Cart {
 		if(map.containsKey(product)) {
 			map.put(product, map.get(product)+i);
 		}
-		else {
-			map.put(product, i);
-		}
-	}
+		else {map.put(product, i);}}
 
 	public void printAll() {
 		System.out.println("@ 모든상품 출력 @");
 		for(Entry<Product, Integer>entry : map.entrySet()) {
 			System.out.println("상품 : "+entry.getKey()
 			+" 수량 : "+entry.getValue());
-		}
-		
-	}
+		}}
 
 	public void minus(Product product, int i) {
 		Integer a = map.getOrDefault(product, 0);//키에 연결된 값 반환
 		int minusCount = a-i;
 		if(minusCount<=0) {
-			map.remove(product);
-			}
+			map.remove(product);}
 		else {
-			map.put(product, minusCount);
-		}
-		
-		
-	}
-
+			map.put(product, minusCount);}}
 }

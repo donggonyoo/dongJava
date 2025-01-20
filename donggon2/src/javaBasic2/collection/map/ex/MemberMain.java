@@ -5,18 +5,20 @@ public class MemberMain {
 		 Member member1 = new Member("id1", "회원1");
 		 Member member2 = new Member("id2", "회원2");
 		 Member member3 = new Member("id3", "회원3"); // 회원 저장
-		 MemberRepository repository = new MemberRepository();
-		 repository.save(member1);
-		 repository.save(member2);
-		 repository.save(member3);
+		 MemberRepository reposit = new MemberRepository();
+		 reposit.save(member1);
+		 reposit.save(member2);
+		 reposit.save(member3);
+		 
 		 // 회원 조회
-		 Member findMember1 = repository.findById("id1");
+		 Member findMember1 = reposit.findById("id1");
 		 System.out.println("findMember1 = " + findMember1);
-		 Member findMember3 = repository.findByName("회원3");
+		 Member findMember3 = reposit.findByName("회원3");
 		 System.out.println("findMember3 = " + findMember3);
+		 
 		 // 회원 삭제
-		 repository.remove("id1");
-		 Member removedMember1 = repository.findById("id1");
+		 reposit.remove("id1");
+		 Member removedMember1 = reposit.findById("id1");
 		 System.out.println("removedMember1 = " + removedMember1);
 		 }
 

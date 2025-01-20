@@ -5,7 +5,7 @@ public class VarChange_2 {
 	public static void main(String[] args) {
 		Num num1 = new Num();
 		num1.number = 19;
-		Num num2 = num1;
+		Num num2 = num1; //주소값이복사가 됨
 		System.out.println("객체 주소");
 		System.out.println("num1 : "+num1);
 		System.out.println("num2 : "+num2);

@@ -18,12 +18,11 @@ public class CommonKeyValueSum {
 		map2.put("D", 6);
 
 		HashMap<Object,Integer> hashMap = new HashMap<>();
+		//공통된 키와 숫자를 담을Map
 		for (String a : map1.keySet()) {
 			if(map2.containsKey(a)) {
-				hashMap.put(a, map1.get(a)+map2.get(a));
-			}
-
-		}
+				hashMap.put(a, map1.get(a)+map2.get(a));}}
+		
 		System.out.println(hashMap);
 	}
 

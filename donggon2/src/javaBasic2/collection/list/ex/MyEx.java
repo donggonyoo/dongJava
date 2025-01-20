@@ -22,7 +22,13 @@ public class MyEx {
 	public void min() {
 		System.out.println("min : "+Collections.min(x));
 	}
-	
+	public void middle() {
+		x.sort(null);
+		if(x.size()%2==0) {
+			System.out.println("리스트 크기가홀수인경우만 중간값 찾기가능");}
+		else{
+			System.out.println("middle : "+x.get(x.size()/2));}
+	}
 	public void totalSum() {
 		int sum=0;
 		for (int i = 0; i < x.size(); i++) {
@@ -34,11 +40,10 @@ public class MyEx {
 				sum+=x.get(i);
 				System.out.print(x.get(i)+"+");
 			}	
-		}
-		System.out.println("sum : "+sum);
+		}System.out.println("sum : "+sum);
 	}
 	public void display() {
-		System.out.println("입력한 총 숫자 : "+x);
+		System.out.println("List : "+x);
 	}
 	
 	

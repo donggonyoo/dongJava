@@ -29,7 +29,6 @@ public class MemberRepository {
 		return null;
 	}
 
-
 	public void remove(String string) {
 		map.remove(string);
 		

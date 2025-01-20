@@ -12,14 +12,13 @@ public class MyExMain {
 		for (int i = 1; i <= size; i++) {
 			System.out.print(i+"번째 숫자 : ");
 			int a = scan.nextInt();
-			myEx.add(a);
-		}
+			myEx.add(a);}
+		
 		myEx.display();
 		myEx.max();
+		myEx.middle();
 		myEx.min();
 		myEx.totalSum();
-		
-
 	}
 
 }

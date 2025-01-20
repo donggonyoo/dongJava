@@ -14,8 +14,6 @@ public class DictionaryTest {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		
-		
 		while(true) {
 			System.out.println("==단어사전==");
 			System.out.println("찾을 영단어를 입력하세요");

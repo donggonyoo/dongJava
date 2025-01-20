@@ -21,7 +21,7 @@ public class Average {
 		list.add(25);
 		list.add(55);
 		list.add(60);
-		list.sort(null);
+		list.sort(null);//중간값을 구하기위함
 		
 		for (Integer integer : list) {
 			sum+= integer;
