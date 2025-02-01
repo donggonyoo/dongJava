@@ -30,7 +30,8 @@ public class Player {
 	
 	public void showHand() {
 		hand.sort(null);
-		System.out.println(name+"의 덱 :"+hand+" 점수 : "+rankSum());
+		System.out.println(name+"의 덱 :"+hand+
+				"\n 점수 : "+rankSum());
 	}
 	
 

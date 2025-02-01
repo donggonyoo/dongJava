@@ -1,5 +1,7 @@
 package javaBasic2.collection.comparable.test;
 
+import java.util.Arrays;
+
 public class CardGameMain {
 
 	public static void main(String[] args) {
@@ -11,10 +13,12 @@ public class CardGameMain {
 			player1.drawCard(deck);//deck안에 셔플기능이있음
 			player2.drawCard(deck);
 		}
-
 		player1.showHand();
-		player2.showHand();
-		int winner = getWinner(player1, player2);
+		player2.showHand(); 
+		int winner = new PlayerCompartor().compare(player1, player2);
+		//비교자를 직접만들어 승자를 반환하게끔만들어봄
+		
+//		int winner = getWinner(player1, player2);
 		switch(winner) {
 		case -1 : System.out.println(player2.getName()+"승리");
 		break;
@@ -25,11 +29,11 @@ public class CardGameMain {
 		}
 	}
 
-	private static int getWinner(Player p1, Player p2) {
-		return p1.rankSum()>p2.rankSum() ? 1:
-			(p1.rankSum()==p2.rankSum())? 0:-1;
-
-	}
+//	private static int getWinner(Player p1, Player p2) {
+//		return p1.rankSum()>p2.rankSum() ? 1:
+//			(p1.rankSum()==p2.rankSum())? 0:-1;
+//
+//	}
 }
 
 

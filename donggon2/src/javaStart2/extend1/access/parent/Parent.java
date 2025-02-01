@@ -24,6 +24,7 @@ public class Parent {
 		System.out.println("defaultValue = " + defaultValue); //부모 메서드 안에서 접근 가능
 		System.out.println("privateValue = " + privateValue); //부모 메서드 안에서 접근 가능
 		//부모 메서드 안에서 모두 접근 가능
+		System.out.println("부모메서드 내부에서 호출하는건 가능!");
 		defaultMethod();
 		privateMethod();
 	}

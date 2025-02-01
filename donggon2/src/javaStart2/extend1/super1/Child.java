@@ -9,6 +9,7 @@ public class Child extends Parent{
 		super.name();
 		System.out.println("자식");
 	}
+	
 	public void call() {
 		System.out.println(this.value);
 		System.out.println(super.value);

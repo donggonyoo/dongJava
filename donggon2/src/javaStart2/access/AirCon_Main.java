@@ -2,7 +2,7 @@ package javaStart2.access;
 
 public class AirCon_Main {
 	public static void main(String[] args) {
-		AirCond airCon = new AirCond(26);
+		AirCond airCon = new AirCond(20);
 		airCon.tempUp();
 		airCon.tempShow();
 		

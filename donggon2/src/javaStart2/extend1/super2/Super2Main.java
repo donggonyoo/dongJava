@@ -2,10 +2,15 @@ package javaStart2.extend1.super2;
 
 public class Super2Main {
 	public static void main(String[] args) {
-		ClassC classCC = new ClassC();
+		ClassC classCC1 = new ClassC();
 		System.out.println();
-		ClassA claccC = new ClassC();
-		//부모는 자식을 담을 수 잇음
+		
+		System.out.println("부모는 자식을 담을 수 있다.");
+		ClassB claccC2 = new ClassC();
+		System.out.println("");
+		ClassA classC3 =  new ClassC();
+		
+
 	
 
 	}

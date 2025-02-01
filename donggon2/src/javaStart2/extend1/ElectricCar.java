@@ -7,7 +7,6 @@ public class ElectricCar extends Car{
 	
 	@Override
 	public void price() {
-		super.price();
 		System.out.println(price+"원");
 	}
 

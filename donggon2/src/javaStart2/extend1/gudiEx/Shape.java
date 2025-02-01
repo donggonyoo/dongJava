@@ -1,4 +1,8 @@
 package javaStart2.extend1.gudiEx;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 //다음 설명에 따라 Shape 클래스를 상속 받은 Circle 클래스와 Rect 클래스를 구현하시오.
 //Circle 클래스는 double형 반지름(r)을 멤버로 가진다.
 //Rect 클래스는 double형 가로(w), double형 세로(h)를 멤버로 가진다.
@@ -22,6 +26,13 @@ public class Shape {
 		  return 0;
 	  }
 	
+	
+	@Override
+	public String toString() {
+		return "Shape [area =" + (int)area() + ", length =" + (int)length() + "]";
+	}
+
+
 	static class Circle extends Shape {
 		  private double r;
 		  
@@ -29,11 +40,11 @@ public class Shape {
 			  this.r = r;
 		  }
 		  @Override
-		  double area(){ 
+		  double area(){  //넓이
 			  return Math.PI*(r*r);
 		  }
 		  @Override
-		  double length() {
+		  double length() { //둘레
 			  return 2*Math.PI*r;
 		  }
 		  
@@ -63,18 +74,17 @@ public class Shape {
 			  int area = 0;
 			  int length = 0;
 			  for (Shape shape : arr) {
+				  System.out.println(shape);
 				 area += (int)shape.area();
 				 length += (int)shape.length();	
 			}
-			System.out.println(area);
-			System.out.println(length);
+			  
+			int result [] ={area , length};
+			System.out.println(Arrays.toString(result));
 
 		}
-		@Override
-		public String toString() {
-			return "Shape []";
-		} 
-		  
+		
+		
 		  
 		
 

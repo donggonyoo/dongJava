@@ -6,16 +6,11 @@ public class Car {
 	Car(){
 		System.out.println("차를 뭐 탈까?");
 	}
-	public void price() {
-		System.out.print("차의 가격은 ? : ");
+	public void price() {	
 	}
-	public void move() {
-		System.out.println("차가 이동합니다");
-		
+	public void move() {	
 	}
-	public void charge() {
-		System.out.println("차를 충전합니다");
-		
+	public void charge() {	
 	}
 
 }
